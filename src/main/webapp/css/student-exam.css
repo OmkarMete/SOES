@@ -1,0 +1,186 @@
+/* ===== SOES Student Exam Page ===== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 30px 18px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	background: linear-gradient(135deg, #eef4ff, #f8fbff);
+	color: #1e293b;
+	line-height: 1.6;
+}
+
+body>h1,
+body>h2,
+body>p,
+body>hr,
+body>form,
+body>a {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body>h1 {
+	margin-top: 0;
+	margin-bottom: 24px;
+	padding: 22px;
+	text-align: center;
+	color: #ffffff;
+	background: linear-gradient(135deg, #173b73, #2563eb);
+	border-radius: 14px;
+	box-shadow: 0 8px 22px rgba(37, 99, 235, 0.18);
+}
+
+body>h2 {
+	margin-top: 0;
+	margin-bottom: 8px;
+	color: #173b73;
+	font-size: 28px;
+}
+
+body>p {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #475569;
+}
+
+body>hr {
+	border: 0;
+	border-top: 1px solid #dbe5f3;
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
+form {
+	padding: 25px;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: 16px;
+	box-shadow: 0 8px 28px rgba(15, 23, 42, 0.07);
+}
+
+form>div {
+	margin-bottom: 22px;
+	padding: 22px;
+	background: #f8fbff;
+	border: 1px solid #e1eaf7;
+	border-left: 5px solid #2563eb;
+	border-radius: 12px;
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+form>div:hover {
+	box-shadow: 0 5px 16px rgba(37, 99, 235, 0.08);
+}
+
+form h3 {
+	margin-top: 0;
+	margin-bottom: 18px;
+	color: #173b73;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+form label {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	margin: 10px 0;
+	padding: 12px 14px;
+	color: #334155;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: 9px;
+	cursor: pointer;
+	transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+form label:hover {
+	background: #eff6ff;
+	border-color: #93c5fd;
+}
+
+form input[type="radio"] {
+	flex-shrink: 0;
+	margin-top: 5px;
+	accent-color: #2563eb;
+	cursor: pointer;
+}
+
+form>hr {
+	display: none;
+}
+
+form button[type="submit"] {
+	display: block;
+	width: 100%;
+	margin-top: 12px;
+	padding: 15px 20px;
+	border: none;
+	border-radius: 10px;
+	background: linear-gradient(135deg, #2563eb, #173b73);
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	box-shadow: 0 5px 14px rgba(37, 99, 235, 0.2);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(37, 99, 235, 0.28);
+}
+
+body>a {
+	display: block;
+	width: fit-content;
+	margin-top: 22px;
+	padding: 11px 18px;
+	color: #1d4ed8;
+	background: #ffffff;
+	border: 1px solid #bfdbfe;
+	border-radius: 9px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: background 0.2s ease;
+}
+
+body>a:hover {
+	background: #dbeafe;
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 16px 10px;
+	}
+
+	body>h1 {
+		padding: 17px 12px;
+		font-size: 23px;
+	}
+
+	body>h2 {
+		font-size: 23px;
+	}
+
+	form {
+		padding: 12px;
+	}
+
+	form>div {
+		padding: 15px;
+	}
+
+	form h3 {
+		font-size: 16px;
+	}
+
+	form label {
+		padding: 11px;
+	}
+}

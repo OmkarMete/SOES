@@ -1,0 +1,151 @@
+/* SOES Add Question Page */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	padding: 35px 18px;
+	background: linear-gradient(135deg, #eaf2ff, #dbeafe);
+	color: #172b4d;
+}
+
+h1 {
+	max-width: 700px;
+	margin: 0 auto 12px;
+	color: #123c78;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+h3 {
+	max-width: 700px;
+	margin: 0 auto 24px;
+	padding: 15px 18px;
+	background: #e0ebff;
+	border-left: 4px solid #2563eb;
+	border-radius: 8px;
+	color: #173b70;
+	font-size: 16px;
+}
+
+/* Question Form */
+
+form {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 30px;
+	background: #ffffff;
+	border: 1px solid #e2eaf5;
+	border-radius: 16px;
+	box-shadow: 0 12px 35px rgba(15, 45, 90, 0.10);
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	color: #243b5b;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+input,
+textarea,
+select {
+	display: block;
+	width: 100%;
+	padding: 12px 14px;
+	margin-bottom: 20px;
+	background: #f8fafc;
+	border: 1px solid #cbd5e1;
+	border-radius: 9px;
+	color: #172b4d;
+	font-size: 14px;
+	outline: none;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea {
+	min-height: 105px;
+	resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	background: #ffffff;
+	border-color: #2563eb;
+	box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.10);
+}
+
+/* Success Message */
+
+body>p {
+	max-width: 700px;
+	margin: 0 auto 18px;
+	padding: 13px 16px;
+	background: #dcfce7;
+	border: 1px solid #bbf7d0;
+	border-radius: 9px;
+	color: #166534;
+	font-size: 14px;
+}
+
+/* Save Question Button */
+
+button {
+	width: 100%;
+	padding: 14px;
+	background: linear-gradient(135deg, #2563eb, #123c78);
+	border: none;
+	border-radius: 9px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
+}
+
+/* Back Link */
+
+body>a {
+	display: block;
+	width: fit-content;
+	max-width: 700px;
+	margin: 22px auto 0;
+	padding: 11px 17px;
+	background: #334155;
+	border-radius: 8px;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: background 0.2s;
+}
+
+body>a:hover {
+	background: #0f172a;
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 24px 14px;
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+
+	form {
+		padding: 22px 18px;
+	}
+}

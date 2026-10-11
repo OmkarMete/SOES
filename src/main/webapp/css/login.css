@@ -1,0 +1,148 @@
+/* SOES Login Page */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	background: linear-gradient(135deg, #eaf2ff, #dbeafe);
+	color: #102a56;
+}
+
+.login-container {
+	width: 100%;
+	max-width: 440px;
+	padding: 42px 38px;
+	background: #ffffff;
+	border: 1px solid #e2eaf5;
+	border-radius: 20px;
+	box-shadow: 0 18px 50px rgba(15, 45, 90, 0.13);
+	animation: fadeIn 0.5s ease;
+}
+
+h1 {
+	text-align: center;
+	font-size: 38px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	color: #123c78;
+	margin-bottom: 8px;
+}
+
+.subtitle {
+	text-align: center;
+	color: #64748b;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 32px;
+}
+
+label {
+	display: block;
+	margin-bottom: 9px;
+	color: #243b5b;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+input {
+	display: block;
+	width: 100%;
+	padding: 14px 15px;
+	margin-bottom: 22px;
+	border: 1px solid #cbd5e1;
+	border-radius: 10px;
+	background: #f8fafc;
+	color: #172b4d;
+	font-size: 15px;
+	outline: none;
+	transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+input::placeholder {
+	color: #94a3b8;
+}
+
+input:focus {
+	background: #ffffff;
+	border-color: #2563eb;
+	box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+button {
+	display: block;
+	width: 100%;
+	padding: 14px;
+	margin-top: 4px;
+	border: none;
+	border-radius: 10px;
+	background: linear-gradient(135deg, #2563eb, #123c78);
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+button:active {
+	transform: translateY(0);
+}
+
+.register-link {
+	margin-top: 26px;
+	text-align: center;
+	color: #64748b;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.register-link a {
+	color: #2563eb;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.register-link a:hover {
+	color: #123c78;
+	text-decoration: underline;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		padding: 16px;
+	}
+
+	.login-container {
+		padding: 32px 24px;
+		border-radius: 16px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+}

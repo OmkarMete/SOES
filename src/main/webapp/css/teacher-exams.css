@@ -1,0 +1,161 @@
+/* SOES Teacher Exams Page */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	padding: 35px 5%;
+	background: #f1f5fb;
+	color: #172b4d;
+}
+
+h1 {
+	margin-bottom: 25px;
+	color: #123c78;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+/* Create Exam Link */
+
+body>a:first-of-type {
+	display: inline-block;
+	margin-bottom: 22px;
+	padding: 12px 20px;
+	background: #2563eb;
+	color: #ffffff;
+	border-radius: 9px;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: background 0.2s, transform 0.2s;
+}
+
+body>a:first-of-type:hover {
+	background: #123c78;
+	transform: translateY(-2px);
+}
+
+/* Exams Table */
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #ffffff;
+	border: 1px solid #e2eaf5;
+	border-radius: 12px;
+	box-shadow: 0 6px 20px rgba(22, 50, 90, 0.06);
+}
+
+thead {
+	background: #173b70;
+	color: #ffffff;
+}
+
+th {
+	padding: 15px;
+	text-align: left;
+	font-size: 13px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+td {
+	padding: 15px;
+	border-bottom: 1px solid #e8eef6;
+	color: #475569;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+tbody tr:last-child td {
+	border-bottom: none;
+}
+
+tbody tr:hover {
+	background: #f5f8ff;
+}
+
+/* Action Links */
+
+td a {
+	display: inline-block;
+	margin: 3px 0;
+	padding: 9px 12px;
+	background: #e6efff;
+	color: #1d4ed8;
+	border-radius: 7px;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+	white-space: nowrap;
+	transition: background 0.2s;
+}
+
+td a:hover {
+	background: #cfe0ff;
+}
+
+/* Publish Button */
+
+td form {
+	margin: 0;
+}
+
+td button {
+	padding: 10px 13px;
+	background: #059669;
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	font-size: 12px;
+	font-weight: 700;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background 0.2s;
+}
+
+td button:hover {
+	background: #047857;
+}
+
+/* Back to Dashboard */
+
+body>a:last-of-type {
+	display: inline-block;
+	margin-top: 25px;
+	padding: 11px 18px;
+	background: #334155;
+	color: #ffffff;
+	border-radius: 8px;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+body>a:last-of-type:hover {
+	background: #0f172a;
+}
+
+/* Responsive Table */
+
+@media (max-width: 900px) {
+	body {
+		padding: 24px 15px;
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+
+	table {
+		display: block;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+}
